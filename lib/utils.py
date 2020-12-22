@@ -24,8 +24,7 @@ def copy_tree(src, dst, ignores=()):
     try:
         names = os.listdir(src)
     except os.error, (os.errno, errstr):
-        raise DistutilsFileError,
-        "error listing files in '%s': %s" % (src, errstr)
+        raise DistutilsFileError, "error listing files in '%s': %s" % (src, errstr)
 
     mkpath(dst)
 
